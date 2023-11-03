@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do S&P 500</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            Previsão do S&P 500 com LSTM e Atenção<br>
+            Trabalho de formatura em Engenharia Mecatrônica - Poli USP (2023)<br>
+            Autores: Gabriel Mossato e Paulino Veloso
+        </div>
+        <div class="right">
+            <div class="prediction-box">
+                <span id="predictedPrice">3500.00</span> (<span id="buyOrSell">COMPRA</span>)
+            </div>
+        </div>
+    </div>
+    <canvas id="myChart"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
